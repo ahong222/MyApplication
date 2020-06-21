@@ -11,4 +11,5 @@ public class SubModule {
     public SubData provideSubData() {
         return new SubData("666666");
     }
+
 }

@@ -6,7 +6,7 @@ import dagger.Subcomponent;
 
 import javax.inject.Singleton;
 
-@Component(modules = {SubModule.class})
+@Component()
 public interface CoffeeShopComponent {
 
 
@@ -16,6 +16,7 @@ public interface CoffeeShopComponent {
 
     void inject(Street app);
 
-    SubCoffeeComponent.Builder page();
+//    SubCoffeeComponent.Builder page();
+    SubCoffeeComponent getSubCoffeeComponent();
 
 }
