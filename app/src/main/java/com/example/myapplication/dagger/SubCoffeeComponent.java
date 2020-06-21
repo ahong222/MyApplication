@@ -17,5 +17,5 @@ public interface SubCoffeeComponent {
     void inject(Street app);
 
 
-    SubData getSubData();
+//    SubData getSubData();
 }

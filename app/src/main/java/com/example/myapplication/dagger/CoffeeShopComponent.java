@@ -14,9 +14,7 @@ public interface CoffeeShopComponent {
 //
 //    Logger logger();
 
-    void inject(Street app);
-
-//    SubCoffeeComponent.Builder page();
+    //    SubCoffeeComponent.Builder page();
     SubCoffeeComponent getSubCoffeeComponent();
 
 }
