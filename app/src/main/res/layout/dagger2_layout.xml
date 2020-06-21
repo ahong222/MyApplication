@@ -4,9 +4,20 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
     <Button
-            android:id="@+id/test"
+            android:id="@+id/test1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="test"/>
+            android:text="街道1买咖啡"/>
+    <Button
+            android:id="@+id/test2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="街道2买咖啡"/>
+
+    <Button
+            android:id="@+id/test3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="街道1_2旗舰店买咖啡"/>
 
 </LinearLayout>
