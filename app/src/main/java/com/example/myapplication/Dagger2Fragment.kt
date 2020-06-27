@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.example.myapplication.dagger.AppData
 import com.example.myapplication.dagger.Street
 
 class Dagger2Fragment : Fragment() {
@@ -19,6 +20,9 @@ class Dagger2Fragment : Fragment() {
         view.findViewById<Button>(R.id.test1).setOnClickListener { view->
 
             street1.byCoffee()
+            street1.byCoffee()
+
+            val appdata = AppData()
         }
 
         view.findViewById<Button>(R.id.test2).setOnClickListener { view->

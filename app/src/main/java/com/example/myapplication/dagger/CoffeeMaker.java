@@ -1,7 +1,6 @@
 package com.example.myapplication.dagger;
 
 import javax.inject.Inject;
-import javax.inject.Singleton;
 
 public class CoffeeMaker {
 

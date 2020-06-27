@@ -1,20 +1,19 @@
 package com.example.myapplication.dagger;
 
 
-import dagger.Component;
 import dagger.Subcomponent;
 
 import javax.inject.Singleton;
 
-@Component()
+@Subcomponent(modules = {SubModule.class})
+@ActivitySingleton
 public interface CoffeeShopComponent {
 
+    @Subcomponent.Builder
+    interface Builder {
+        CoffeeShopComponent build();
+    }
 
-//    CoffeeMaker coffeeMaker();
-//
-//    Logger logger();
-
-    //    SubCoffeeComponent.Builder page();
-    SubCoffeeComponent getSubCoffeeComponent();
+    void inject(Street street);
 
 }
