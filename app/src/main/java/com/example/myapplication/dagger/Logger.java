@@ -1,5 +1,6 @@
 package com.example.myapplication.dagger;
 
+import hugo.weaving.DebugLog;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -14,6 +15,7 @@ public class Logger {
         this.retrofit = retrofit;
     }
 
+    @DebugLog
     public void log(String msg) {
         System.out.println(msg);
         System.out.println("retrofit:"+retrofit);
